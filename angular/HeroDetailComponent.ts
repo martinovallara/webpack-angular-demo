@@ -32,7 +32,6 @@ export class HeroDetailComponent implements OnInit {
     this.heroService
       .update(this.hero)
       .then(res => {
-        console.log("then up")
         this.router.navigate(['/dashboard'])
       })
   }
